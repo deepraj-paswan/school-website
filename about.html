@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="sub-header">
+            <nav>
+                <a href="index.html"> <img src="logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-rectangle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSES</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars "  onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us </h1>
+          
+     
+    </section>
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the World Largest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi mollitia necessitatibus impedit perspiciatis, ducimus fugiat debitis totam animi nemo ipsum fuga iusto cumque voluptas id facere dicta corporis beatae itaque reiciendis laudantium, laborum earum. Sit sed blanditiis quis quisquam, soluta neque nisi officiis. Ab, doloremque doloribus fugiat dolorem laboriosam perferendis!<br>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+            </p>
+        </div>
+        <div class="about-col">
+            <img src="about.jpg" alt="">
+        </div>
+    </div>
+    
+       <!-- Footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quia nihil qui necessitatibus <br> explicabo fuga similique excepturi, iste autem sequi.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <p>Made with <i class="fa-regular fa-heart"></i> by DEEPRAJ</p>
+        </section>
+
+
+<!-- javascript for toggle menu -->
+<script>
+
+    var navLinks=document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0"; 
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px"; 
+    }
+</script>
+</body>
+</html>
